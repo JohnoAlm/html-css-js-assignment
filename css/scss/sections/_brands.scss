@@ -1,0 +1,21 @@
+#brands{
+
+    .container{
+        display: none;
+        padding-top: 50px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+
+
+        @include md{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include lg{
+            grid-template-columns: repeat(6, 1fr);
+        }
+    
+    }
+}

@@ -5,11 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a041cc045c.js" crossorigin="anonymous"></script>
     <link href="css/style.min.css" rel="stylesheet">
-    <title></title>
+    <script defer src="js/carousel.js"></script>
+    <title>html-css-js-assignment | Oliver Almén</title>
 </head>
 <body>
+
+    <div class="wrapper">
+
+        <header>
+            <div class="container">
+
+                <a id="navbar-logo" href="home.html"><img src="images/logo/silicon-logo-light_theme.svg" alt="silicon-logotype"></a>
+
+                <nav id="menu">
+                    <div class="menu-links">
+                        <a class="nav-link" href="#showcase">Overview</a>
+                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </nav>
+
+                <div id="theme-mode">
+                    <div class="theme-switch-wrapper">
+                        <label for="theme-toggle-switch">Light</label>
+                        <label class="theme-switch" for="theme-toggle-switch">
+                            <input type="checkbox" id="theme-toggle-switch" />
+                            <div class="slider round"></div>
+                        </label>
+                        <label for="theme-toggle-switch">Dark</label>
+                    </div>
+                </div>
+
+                <a id="sign-in-up-btn" class="btn btn-theme"><i class="fa-regular fa-user"></i> Sign in / up</a>
+
+                <button id="mobile-menu-btn" class="mobile-menu" onclick="toggleMenu()"><i class="fa-regular fa-bars"></i></button>
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <section id="showcase">
+
+                <div class="container">
+
+                    <div class="content">
+
+                        <h1>Manage All Your Money in One App</h1>
+                        <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+
+                        <div class="download-app">
+                            <a class="appstore" href="#"><img src="images/appstore.svg" alt="Download on Appstore"></a>
+                            <a class="googleplay" href="#"><img src="images/googleplay.svg" alt="Download on Google Play"></a>    
+                        </div>
+    
+                        <a class="more" href="#features"><i class="fa-solid fa-chevron-down"></i> Discover more</a>
+
+                    </div>
+
+                    <img src="images/showcase-mobiles.svg" alt="showcase-mobiles">
+       
+                </div>
+
+
+            </section>
+
+            <section id="brands">
+
+                <div class="container">
+                    <div class="brand-box"><img src="images/brands/brand_1.svg" alt="brand-1"></div>
+                    <div class="brand-box"><img src="images/brands/brand_2.svg" alt="brand-2"></div>
+                    <div class="brand-box"><img src="images/brands/brand_3.svg" alt="brand-3"></div>
+                    <div class="brand-box"><img src="images/brands/brand_4.svg" alt="brand-4"></div>
+                    <div class="brand-box"><img src="images/brands/brand_5.svg" alt="brand-5"></div>
+                    <div class="brand-box"><img src="images/brands/brand_6.svg" alt="brand-6"></div>
+                </div>
+
+            </section>
+
+            <section id="features">
+
+                <div class="container">
+
+                    <img src="images/mobile-appfeatures.svg" alt="features-mobile">
+
+                    <div class="content">
+                        <h1>App Features</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum sequi incidunt ducimus provident eveniet aliquam rem a optio alias non vero necessitatibus sint, repellendus quibusdam!</p>
+
+                        <div class="features-wrapper">
+
+                            <div class="feature-box">
+                                <img class="icon" src="images/icons/feature_1.svg" alt="feature-1">
+                                <div class="content">
+                                    <h5>Easy Payments</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box">
+                                <img class="icon" src="images/icons/feature_2.svg" alt="feature-2">
+                                <div class="content">
+                                    <h5>Data Security</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box">
+                                <img class="icon" src="images/icons/feature_3.svg" alt="feature-3">
+                                <div class="content">
+                                    <h5>Cost Statistics</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box">
+                                <img class="icon" src="images/icons/feature_4.svg" alt="feature-4">
+                                <div class="content">
+                                    <h5>Support 24/7</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box">
+                                <img class="icon" src="images/icons/feature_5.svg" alt="feature-5">
+                                <div class="content">
+                                    <h5>Regular Cashback</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+
+                            <div class="feature-box">
+                                <img class="icon" src="images/icons/feature_6.svg" alt="feature-6">
+                                <div class="content">
+                                    <h5>Top Standards</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="how-does-it-work">
+            
+                <div class="container">
+                    <h1>How Does It Work?</h1>   
+
+                    <div class="carousel" data-carousel>
+                        <button class="carousel-btn prev" data-carousel-btn="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                        
+                        <ul class="slides" data-slides>
+                            
+                            <li class="slide">
+                                <img src="images/mobile-howdoesitwork_1.svg" alt="howdoesitwork-1">
+                            </li>
+                            <li class="slide" data-active>
+                                <img src="images/mobile-howdoesitwork_2.svg" alt="howdoesitwork-2">
+                            </li>
+                            <li class="slide">
+                                <img src="images/mobile-howdoesitwork_3.svg" alt="howdoesitwork-3">
+                            </li>
+     
+                        </ul>
+
+                        <button class="carousel-btn next" data-carousel-btn="next"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+
+                    <h5>Step 2. Latest transaction history</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci at, placeat amet magnam accusantium.</p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <footer></footer>
+
+    </div>
     
 </body>
 </html>

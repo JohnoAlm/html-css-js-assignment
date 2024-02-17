@@ -1,8 +1,3 @@
-// cores
-@import './scss/cores/colors';
-@import './scss/cores/fonts';
-@import './scss/cores/base';
-@import './scss/cores/buttons';
-
-// sections
-@import './scss/sections/header';
+@import './scss/core';
+@import './scss/components';
+@import './scss/sections';

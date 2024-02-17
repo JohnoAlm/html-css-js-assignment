@@ -1,0 +1,53 @@
+#how-does-it-work{
+    @include shadow-secondary;
+
+    .container{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        h1{
+            text-align: center;
+        }
+       
+        .carousel{
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+
+            .slides{
+                list-style-type: none;
+                display: flex;
+                gap: 50px;
+
+                .slide{
+                    opacity: 75%;
+                    transition: 200ms opacity ease-in-out;
+
+                    &[data-active]{
+                        opacity: 100%;
+                    }
+                }
+            }
+
+            .carousel-btn{
+                background: none;
+                border: none;
+
+            }
+        }
+
+        h5{
+            display: flex;
+            justify-content: center;
+            align-items: center;            
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

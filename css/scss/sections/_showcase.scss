@@ -1,0 +1,63 @@
+#showcase{
+    background: $gradient-background;
+
+    .container{
+        display: grid;
+        align-items: center;
+        gap: 30px;
+
+        @include lg{
+            padding-top: 50px;
+        }
+
+        // mobile layout
+        grid-template-columns: 1fr auto;
+        grid-template-areas:    "img"
+                                "content";
+
+        // tablet / desktop layout
+        @include md{
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "content img";
+        }
+       
+        .content{
+            grid-area: content;
+            text-align: center;
+            padding: 20px;
+            gap: 20px;
+  
+            @include lg{
+                display: grid;
+                grid-template-rows: auto auto 1fr auto;
+                text-align: left; 
+            }
+
+            
+            h1{
+                @include lg{
+                    @include d4;
+                }
+            }
+
+            .download-app{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+
+                @include lg{
+                    justify-content: flex-start;
+                }
+            }
+
+            .more{
+                margin: 20px 0;
+            }
+        }
+
+        img{  
+            grid-area: img;
+            width: 100%;
+        }
+    }
+}

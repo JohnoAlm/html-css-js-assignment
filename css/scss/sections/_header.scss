@@ -1,0 +1,75 @@
+header{
+
+    .container{
+        padding: 1rem;
+        display: grid;
+        align-items: center;
+        gap: 30px;
+
+        grid-template-columns:1fr auto;
+        grid-template-areas:    "navbar-logo mobile-menu-btn";
+
+        @include md{
+
+        }
+
+        @include lg{
+            grid-template-columns: auto 1fr auto auto;
+            grid-template-areas:    "navbar-logo menu theme-mode sign-in-up-btn";
+        }
+
+        // navbar-logo
+        #navbar-logo{
+            grid-area: navbar-logo;
+        }
+
+        // menu
+        #menu{
+            grid-area: menu;
+            display: none;
+            
+            @include lg{
+                display: flex;
+            }
+
+            .menu-links{
+                gap: 20px;
+
+                @include lg{
+                    display: flex;
+                    
+                }
+            }
+        }
+
+        // theme-mode
+        #theme-mode{
+            grid-area: theme-mode;
+            display: none;
+
+            @include lg{
+                display: flex;
+            }
+
+        }
+
+        // sign-in-up-btn
+        #sign-in-up-btn{
+            grid-area: sign-in-up-btn;
+            display: none;
+
+            @include lg{
+                display: flex;
+            }
+        }
+
+        // mobile-menu-btn
+        #mobile-menu-btn{
+            grid-area: mobile-menu-btn;
+            
+            @include lg{
+                display: none;
+            }
+        }
+    }
+}
