@@ -1,0 +1,185 @@
+.wrapper{
+   
+    #contact-header{
+        background-color: $gray-200;
+       
+    }
+
+    main{
+
+        #contact{
+            background-color: $gray-200;
+            padding-top: 20px;
+
+            .container{
+                padding: 1rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas:    "box1"
+                                        "box2";
+                gap: 50px;
+
+                @include lg{
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-areas:    "box1 box2";
+                }
+
+                .box-1{
+                    grid-area: box1;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .arrow-nav{
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                    }
+
+                    h1{
+                        padding-top: 20px;
+                    }
+
+                    .contact-box{
+                        padding-top: 20px;
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        grid-template-areas:    "circle content";
+                        gap: 20px;
+
+                        .circle{
+                            grid-area: circle;
+                            
+                            .icon-wrapper{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 36px;
+                                height: 36px;
+                                border-radius: 50%;
+                                background-color: $white;
+                                color: $primary;
+                            }
+                        }
+
+                        .content{
+                            grid-area: content;  
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                        }
+                    }
+                }
+
+                .box-2{
+                    
+                    display: flex;
+                    justify-content: center;
+                    grid-area: box2;
+
+                    @include lg{
+                        position: relative;
+                    }
+                    
+                    
+                    .form-card{
+                        
+                        @include lg{
+                            position: absolute;
+                        }
+
+                        margin-left: 50px;
+                        padding: 50px;
+                        @include shadow-s;
+                        border-radius: 8px;
+                      
+                        form{    
+                            padding-top: 15px;   
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+                            #email-error-handler{
+                                display: inline-block;
+                            }
+                
+                            #email-error-handler.valid{    
+                                 color: $success;
+                
+                                 &:before{              
+                                    font-family: "Font Awesome 5 Pro";
+                                    content: '\f00c';
+                                    margin-right: 10px;
+                                    justify-content: end;
+                                 }
+                                     
+                            }
+                
+                            #email-error-handler.invalid{    
+                                 color: $danger;
+                
+                                 &:before{
+                                    font-family: "Font Awesome 5 Pro";
+                                    content: '\f06a';
+                                    margin-right: 10px;
+                                    justify-content: end;
+                                }
+                            }
+
+                            input{
+                                width: 100%;
+                            }
+    
+                            select{
+                                width: 100%;
+                            }
+    
+                            .date-select{
+                                display: flex;
+                                gap: 10px;
+                                
+                                .date{
+                                    flex: 0.5;
+                                }
+                                .time{
+                                    flex: 0.5;
+                                }
+                            }
+
+                            #appointment-btn-wrapper{
+                                padding-top: 15px;
+                                display: flex;
+                                
+                                #appointment-btn{
+                                    display: flex;
+                                    padding: 8px 12px;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 12px;
+                                    border-radius: 6px;
+                                    text-align: center;
+                                    font-size: 14px;
+                                    font-weight: 500;
+
+
+                                    color: $white;
+                                    @include shadow-primary;
+                                    border: none;
+                                
+                                    &:hover {
+                                        text-decoration: none;
+                                        background: $secondary;
+                                        color: $white;
+                                    }
+                                }
+                                
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}

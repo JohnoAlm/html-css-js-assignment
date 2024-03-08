@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/a041cc045c.js" crossorigin="anonymous"></script>
     <link href="css/style.min.css" rel="stylesheet">
     <script defer src="js/carousel.js"></script>
+    <script defer src="js/accordion.js"></script>
+    <script defer src="js/form.js"></script>
     <title>html-css-js-assignment | Oliver Almén</title>
 </head>
 <body>
@@ -24,7 +26,7 @@
                     <div class="menu-links">
                         <a class="nav-link" href="#showcase">Overview</a>
                         <a class="nav-link" href="#features">Features</a>
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link" href="#news">News</a>
                         <a class="nav-link" href="contact.html">Contact</a>
                     </div>
                 </nav>
@@ -42,7 +44,7 @@
 
                 <a id="sign-in-up-btn" class="btn btn-theme"><i class="fa-regular fa-user"></i> Sign in / up</a>
 
-                <button id="mobile-menu-btn" class="mobile-menu" onclick="toggleMenu()"><i class="fa-regular fa-bars"></i></button>
+                <button id="mobile-menu-btn" class="mobile-menu"><i class="fa-regular fa-bars"></i></button>
             </div>
 
         </header>
@@ -64,7 +66,7 @@
                             <a class="googleplay" href="#"><img src="images/googleplay.svg" alt="Download on Google Play"></a>    
                         </div>
     
-                        <a class="more" href="#features"><i class="fa-solid fa-chevron-down"></i> Discover more</a>
+                        <a class="more" href="#features"><i class="fa-solid fa-chevron-down button-circle"></i> Discover more</a>
 
                     </div>
 
@@ -158,30 +160,279 @@
             <section id="how-does-it-work">
             
                 <div class="container">
-                    <h1>How Does It Work?</h1>   
 
-                    <div class="carousel" data-carousel>
-                        <button class="carousel-btn prev" data-carousel-btn="prev"><i class="fa-solid fa-chevron-left"></i></button>
-                        
-                        <ul class="slides" data-slides>
-                            
-                            <li class="slide">
-                                <img src="images/mobile-howdoesitwork_1.svg" alt="howdoesitwork-1">
-                            </li>
-                            <li class="slide" data-active>
-                                <img src="images/mobile-howdoesitwork_2.svg" alt="howdoesitwork-2">
-                            </li>
-                            <li class="slide">
-                                <img src="images/mobile-howdoesitwork_3.svg" alt="howdoesitwork-3">
-                            </li>
-     
-                        </ul>
+                    <h1 class="header">How Does It Work?</h1>   
 
-                        <button class="carousel-btn next" data-carousel-btn="next"><i class="fa-solid fa-chevron-right"></i></button>
+                    <div class="carousel" data-carousel>       
+                        <button class="carousel-btn prev" data-carousel-btn="prev"><i class="fa-solid fa-chevron-left button-circle"></i></button>
+        
+                            <ul class="slides" data-slides> 
+                                <li class="slide">
+                                    <img src="images/mobile-howdoesitwork_1.svg" alt="howdoesitwork-1">
+                                </li>
+                                <li class="slide" data-active>
+                                    <img src="images/mobile-howdoesitwork_2.svg" alt="howdoesitwork-2">
+                                </li>
+                                <li class="slide">
+                                    <img src="images/mobile-howdoesitwork_3.svg" alt="howdoesitwork-3">
+                                </li>
+                            </ul>
+
+                        <button class="carousel-btn next" data-carousel-btn="next"><i class="fa-solid fa-chevron-right button-circle"></i></button>
                     </div>
 
-                    <h5>Step 2. Latest transaction history</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci at, placeat amet magnam accusantium.</p>
+                    <div class="step-text">
+                        <h5>Step 2. Latest transaction history</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia adipisci at, placeat amet.</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="learn-more">
+
+                <div class="container">
+           
+                    <div id="content-1">
+                        <h1>Make your money transfer simple and clear</h1>
+                        
+                        <ul>
+                            <li><i class="fa-light fa-circle-check"></i> Banking transactions are free for you</li>
+                            <li><i class="fa-light fa-circle-check"></i> No monthly cash commission</li>
+                            <li><i class="fa-light fa-circle-check"></i> Manage payments and transactions online</li>
+                        </ul>
+
+                        <button class="btn btn-theme learn-more-btn">Learn more <i class="fa-regular fa-arrow-right"></i></button>
+                    </div>
+                    
+                    <img id="simple-and-clear" src="images/simple-and-clear.svg" alt="simple-and-clear">
+
+                    <img id="bank-details" src="images/bank-details.svg" alt="bank-details">
+                    
+                    <div id="content-2">
+                        
+                        <h1>Receive payments from international bank details</h1>
+
+                        <div class="boxes">
+                            <div class="box">
+                                <img class="icon" src="images/icons/feature_1.svg" alt="feature-1">
+                                <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+                            </div>                   
+    
+                            <div class="box">
+                                <img class="icon" src="images/icons/feature_5.svg" alt="feature-5">
+                                <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+                            </div>
+                        </div>
+    
+                        <button class="btn btn-theme learn-more-btn">Learn more <i class="fa-regular fa-arrow-right"></i></button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="clients">
+                
+                <div class="container">
+
+                    <div class="box-1">
+                        <h1>Clients are Loving Our App</h1>
+
+                        <div class="btn-wrapper">
+                            <button><i class="fa-solid fa-chevron-left button-circle"></i></button>
+                            <button class=""><i class="fa-solid fa-chevron-right button-circle"></i></button>
+                        </div>
+
+                    </div>
+
+                    <div class="box-2">
+                        <div class="client-card">
+
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-light fa-star"></i></span>
+                            </div>
+
+                            <div class="text">
+                                <p>Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis. Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. Montes justo turpis sit amet.</p>
+                            </div>
+
+                            <div class="client">
+                                <img class="client-img" src="images/Fannie.svg" alt="Fannie">
+
+                                <div class="client-info">
+                                    <div class="client-name">
+                                        <h6>Fannie Summers</h6>
+                                    </div>
+                                    <div class="client-title">
+                                        <small>Designer</small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="box-3">
+                        <div class="client-card">
+
+                            <div class="rating">
+                                <span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                            </div>
+
+                            <div class="text">
+                                <p>Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. Dictum pretium dolor tincidunt egestas eget.</p>
+                            </div>
+
+                            <div class="client">
+
+                                <img class="client-img" src="images/Albert.svg" alt="Albert">
+
+                                <div class="client-info">
+                                    <div class="client-name">
+                                        <h6>Albert Flores</h6>
+                                    </div>
+                                    <div class="client-title">
+                                        <small>Developer</small>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="faq">
+                
+                <div class="container">
+
+                    <div class="box-1">
+                        <h1>Any questions?</h1>
+                        <h1>Check out the FAQs</h1>
+    
+                        <p>Still have unanswered questions and need to get in touch?</p>
+
+                        <div class="contact-wrapper">                
+                            <div class="contact-box">
+                                <img src="images/icons/phone.svg" alt="phone">
+    
+                                <p>Still have questions?</p>
+    
+                                <a class="phone-contact" href="contact.html">Contact us <i class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+        
+                            <div class="contact-box">
+                                <img src="images/icons/message-dots.svg" alt="message-dots">
+    
+                                <p>Don't like phone calls?</p>
+    
+                                <a class="message-contact" href="contact.html">Contact us <i class="fa-regular fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="box-2">
+                        <div class="accordion-wrapper">
+                            <button class="accordion">
+                                Is any of my personal information stored in the App?      
+                            </button>
+                            <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-wrapper">
+                            <button class="accordion">
+                                What formats can I download my transaction history in?
+                            </button>
+                            <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-wrapper">
+                            <button class="accordion">
+                                Can I schedule future transfers?        
+                            </button>
+                            <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-wrapper">
+                            <button class="accordion">        
+                                When can I use Banking App services?
+                            </button>
+                            <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-wrapper">
+                            <button class="accordion">
+                                    Can I create my own password that is easy for me to remember?
+                            </button>
+                            <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                        <div class="accordion-wrapper">
+                            <button class="accordion">                    
+                                What happens if I forget or lose my password?                
+                            </button>
+                            <div class="panel">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                
+                </div>
+
+            </section>
+
+            <section id="newsletter">
+
+                <div class="container">
+                    
+                    <div class="newsletter-wrapper">
+
+                        <div class="box-1">
+                   
+                            <img src="images/notification-bell.svg"> 
+    
+                            <h1>Subscribe to our newsletter to stay informed about latest updates</h1>
+
+                        </div>
+
+                        <div class="box-2">
+
+                            <form onsubmit="handleNewsletterSubmit(event)" method="post" class="newsletter-form" novalidate>
+    
+                                <div class="input-wrapper">
+
+                                    <i class="fa-regular fa-envelope"></i>
+                                    
+                                    <input onkeyup="validateEmail(this)" required class="email-input" type="email" placeholder="Your Email">
+
+                                    <button class="btn-theme">Subscribe</button>
+
+                                </div>
+                                               
+                            </form>
+                            
+                            <div id="email-error-handler"></div>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -189,8 +440,46 @@
 
         </main>
 
+        <footer id="main-footer">
 
-        <footer></footer>
+            <div class="container">
+
+                <a id="footer-logo" href="home.html"><img src="images/logo/silicon-logo-light_theme.svg" alt="silicon-logotype"></a>
+
+                <nav id="footer-menu">
+                    <div class="menu-links">
+                        <a class="nav-link" href="#showcase">Overview</a>
+                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </div>
+                </nav>
+
+                
+                <div id="footer-apps">
+                    <a class="appstore" href="#"><img src="images/appstore.svg" alt="Download on Appstore"></a>
+                    <a class="googleplay" href="#"><img src="images/googleplay.svg" alt="Download on Google Play"></a>    
+                </div>
+
+
+                <div id="footer-icons">
+                    
+                    <a class="social-media-box" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a class="social-media-box" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="social-media-box" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="social-media-box" href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+
+                <div id="footer-text">
+
+                    <p>2024. All rights reserved. Pulvinar urna condimentum amet tempor, ornare integer. Lorem odio justo malesuada suspendisse viverra aliquet quisque turpis non. Feugiat in odio non nunc ornare consectetur.</p>
+
+                </div>
+
+            </div>
+
+        </footer>
 
     </div>
     

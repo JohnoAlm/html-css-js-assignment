@@ -1,0 +1,82 @@
+#learn-more{
+
+    .container{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-areas:    "content-1"
+                                "content-2";
+        padding: 50px;
+        gap: 50px;
+
+        @include xl{
+            padding: 0;
+            gap: 0;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:    "content-1 simple-and-clear"
+                                    "bank-details content-2";
+        }
+
+        #content-1{
+            grid-area: content-1;
+    
+            ul{
+                margin-top: 20px;
+                list-style-type: none;
+                padding-left: 0;
+
+                li{
+                    i{
+                        margin-right: 10px;
+                        color: $primary;
+                    }
+                }
+            }
+
+            .learn-more-btn{
+                margin-top: 20px;
+            }       
+        }
+
+        #simple-and-clear { 
+            display: none;
+            grid-area: simple-and-clear; 
+
+            @include xl{
+                display: block;
+            }
+        }
+
+        #bank-details {
+            display: none;
+            grid-area: bank-details; 
+            
+            @include xl{
+                display: block;
+            }
+        }
+
+        #content-2{
+            grid-area: content-2;
+            
+            .boxes{
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 20px;
+
+               .box{
+                    img{
+                        background-color: $gray-200;
+                        padding: 15px;
+                        border-radius: 10px;
+                        margin-top: 20px;
+                    }
+
+                    p{
+                        margin-top: 20px;
+                    }    
+               }
+            }
+        }
+    }
+}

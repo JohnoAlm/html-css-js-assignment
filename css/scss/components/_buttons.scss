@@ -49,8 +49,8 @@
 
 
 .button-circle,
-i.buttion-circle,
-a.buttion-circle {
+i.button-circle,
+a.button-circle {
    @include circle-button;
    color: $gray-900;
    background: $white;

@@ -1,0 +1,54 @@
+#locations{
+
+    .container{
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+
+        @include lg{
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .box-1{
+            grid-area: box-1;
+        }
+
+        .box-2{
+            grid-area: box-2;
+
+            .location-wrapper{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .location-box{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    span{
+                        display: block;
+                    
+                        i{
+                            color: $primary;
+                            margin-right: 8px;
+                        }
+
+                       
+                    } 
+                }
+
+                .social-media-wrapper{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+            }
+        }
+        
+    }
+}

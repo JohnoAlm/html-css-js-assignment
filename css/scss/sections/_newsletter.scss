@@ -1,0 +1,95 @@
+#newsletter{
+    .container{
+
+        .newsletter-wrapper{
+            padding: 50px 50px;
+            display: grid;
+            grid-template-areas:    "box-1"
+                                    "box-2";
+            grid-template-columns: 1fr;
+            align-items: center;
+            gap: 50px;
+
+            background: $gray-100;
+            border-radius: 8px;
+
+            @include lg{
+                grid-template-areas:    "box-1 box-2";
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .box-1{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                
+
+                h1{
+                    @include h5;
+                }
+            }
+
+            .box-2{
+
+                .newsletter-form{
+                    
+                   .input-wrapper{
+                        display: flex;
+                        background: $white;
+                        color: $gray-500;
+                        border: 1px solid $gray-300;
+                        border-radius: 8px;
+        
+                        i{
+                            display: flex;
+                            align-items: center;
+                            margin: 0 10px;
+                        }
+
+                       .email-input{
+                            flex: 1;
+                            border: none;
+                            
+                            &::placeholder{
+                                color: $gray-500;
+                            }
+
+                            &:focus{
+                                outline: none;
+                            }
+                                    
+                       }
+                   }         
+                }
+
+                #email-error-handler{
+                    display: inline-block;
+                }
+
+                #email-error-handler.valid{    
+                     color: $success;
+
+                     &:before{              
+                        font-family: "Font Awesome 5 Pro";
+                        content: '\f00c';
+                        margin-right: 10px;
+                        justify-content: end;
+                     }
+                         
+                }
+
+                #email-error-handler.invalid{    
+                     color: $danger;
+
+                     &:before{
+                        font-family: "Font Awesome 5 Pro";
+                        content: '\f06a';
+                        margin-right: 10px;
+                        justify-content: end;
+                     }
+                }
+            }
+
+        }
+    }
+}

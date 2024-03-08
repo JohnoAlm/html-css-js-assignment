@@ -6,11 +6,11 @@ header{
         align-items: center;
         gap: 30px;
 
-        grid-template-columns:1fr auto;
+        grid-template-columns: 1fr auto;
         grid-template-areas:    "navbar-logo mobile-menu-btn";
 
         @include md{
-
+            
         }
 
         @include lg{
