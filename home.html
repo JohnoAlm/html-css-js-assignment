@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a041cc045c.js" crossorigin="anonymous"></script>
     <link href="css/style.min.css" rel="stylesheet">
-    <script defer src="js/carousel.js"></script>
     <script defer src="js/accordion.js"></script>
     <script defer src="js/form.js"></script>
     <title>html-css-js-assignment | Oliver Almén</title>
@@ -49,9 +48,7 @@
 
         </header>
 
-
         <main>
-
             <section id="showcase">
 
                 <div class="container">
@@ -163,14 +160,14 @@
 
                     <h1 class="header">How Does It Work?</h1>   
 
-                    <div class="carousel" data-carousel>       
-                        <button class="carousel-btn prev" data-carousel-btn="prev"><i class="fa-solid fa-chevron-left button-circle"></i></button>
+                    <div class="carousel">       
+                        <button class="carousel-btn prev"><i class="fa-solid fa-chevron-left button-circle"></i></button>
         
-                            <ul class="slides" data-slides> 
+                            <ul class="slides"> 
                                 <li class="slide">
                                     <img src="images/mobile-howdoesitwork_1.svg" alt="howdoesitwork-1">
                                 </li>
-                                <li class="slide" data-active>
+                                <li class="slide">
                                     <img src="images/mobile-howdoesitwork_2.svg" alt="howdoesitwork-2">
                                 </li>
                                 <li class="slide">
@@ -178,7 +175,7 @@
                                 </li>
                             </ul>
 
-                        <button class="carousel-btn next" data-carousel-btn="next"><i class="fa-solid fa-chevron-right button-circle"></i></button>
+                        <button class="carousel-btn next"><i class="fa-solid fa-chevron-right button-circle"></i></button>
                     </div>
 
                     <div class="step-text">
@@ -242,7 +239,7 @@
 
                         <div class="btn-wrapper">
                             <button><i class="fa-solid fa-chevron-left button-circle"></i></button>
-                            <button class=""><i class="fa-solid fa-chevron-right button-circle"></i></button>
+                            <button><i class="fa-solid fa-chevron-right button-circle"></i></button>
                         </div>
 
                     </div>
@@ -415,20 +412,15 @@
                         <div class="box-2">
 
                             <form onsubmit="handleNewsletterSubmit(event)" method="post" class="newsletter-form" novalidate>
-    
                                 <div class="input-wrapper">
-
                                     <i class="fa-regular fa-envelope"></i>
-                                    
-                                    <input onkeyup="validateEmail(this)" required class="email-input" type="email" placeholder="Your Email">
-
-                                    <button class="btn-theme">Subscribe</button>
-
-                                </div>
-                                               
+                                    <input onkeyup="validateEmail(this)" required name="email" class="email-input" type="email" placeholder="Your Email">
+                                    <button id="newsletter-btn" class="btn-theme">Subscribe</button>
+                                </div>                       
+                                <div class="input-error-handler"></div>
                             </form>
                             
-                            <div id="email-error-handler"></div>
+                            
 
                         </div>
 
@@ -437,7 +429,6 @@
                 </div>
 
             </section>
-
         </main>
 
         <footer id="main-footer">

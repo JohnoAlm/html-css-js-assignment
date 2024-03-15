@@ -23,7 +23,6 @@
                 align-items: center;
                 gap: 30px;
                 
-
                 h1{
                     @include h5;
                 }
@@ -56,40 +55,11 @@
 
                             &:focus{
                                 outline: none;
-                            }
-                                    
+                            }          
                        }
                    }         
                 }
-
-                #email-error-handler{
-                    display: inline-block;
-                }
-
-                #email-error-handler.valid{    
-                     color: $success;
-
-                     &:before{              
-                        font-family: "Font Awesome 5 Pro";
-                        content: '\f00c';
-                        margin-right: 10px;
-                        justify-content: end;
-                     }
-                         
-                }
-
-                #email-error-handler.invalid{    
-                     color: $danger;
-
-                     &:before{
-                        font-family: "Font Awesome 5 Pro";
-                        content: '\f06a';
-                        margin-right: 10px;
-                        justify-content: end;
-                     }
-                }
             }
-
         }
     }
 }

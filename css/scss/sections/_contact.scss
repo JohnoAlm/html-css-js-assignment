@@ -1,8 +1,7 @@
 .wrapper{
    
     #contact-header{
-        background-color: $gray-200;
-       
+        background-color: $gray-200;   
     }
 
     main{
@@ -99,33 +98,6 @@
                             display: flex;
                             flex-direction: column;
                             gap: 10px;
-
-                            #email-error-handler{
-                                display: inline-block;
-                            }
-                
-                            #email-error-handler.valid{    
-                                 color: $success;
-                
-                                 &:before{              
-                                    font-family: "Font Awesome 5 Pro";
-                                    content: '\f00c';
-                                    margin-right: 10px;
-                                    justify-content: end;
-                                 }
-                                     
-                            }
-                
-                            #email-error-handler.invalid{    
-                                 color: $danger;
-                
-                                 &:before{
-                                    font-family: "Font Awesome 5 Pro";
-                                    content: '\f06a';
-                                    margin-right: 10px;
-                                    justify-content: end;
-                                }
-                            }
 
                             input{
                                 width: 100%;

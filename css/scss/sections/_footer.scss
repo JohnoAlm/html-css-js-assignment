@@ -1,3 +1,5 @@
+// Main footer
+
 #main-footer{
 
     .container{
@@ -42,6 +44,8 @@
         }
     }
 }
+
+// Dark footer
 
 #dark-footer{
     background-color: $gray-900;
@@ -91,11 +95,11 @@
                      border: 1px solid $gray-500;
                      border-radius: 8px;
      
-                     i{
+                    i{
                         display: flex;
                         align-items: center;
                         margin: 0 10px;
-                     }
+                    }
 
                     .email-input{
                         flex: 1;
@@ -103,45 +107,17 @@
                         color: $gray-500;
                         border: none;
                          
-                         &::placeholder{
-                             color: $gray-500;
-                         }
+                        &::placeholder{
+                            color: $gray-500;
+                        }
 
-                         &:focus{
-                             outline: none;
-                         }
+                        &:focus{
+                            outline: none;
+                        }
                                  
                     }
                 }         
             }
-
-            #email-error-handler{
-                display: inline-block;
-            }
-
-            #email-error-handler.valid{    
-                 color: $success;
-
-                 &:before{              
-                    font-family: "Font Awesome 5 Pro";
-                    content: '\f00c';
-                    margin-right: 10px;
-                    justify-content: end;
-                 }
-                     
-            }
-
-            #email-error-handler.invalid{    
-                 color: $danger;
-
-                 &:before{
-                    font-family: "Font Awesome 5 Pro";
-                    content: '\f06a';
-                    margin-right: 10px;
-                    justify-content: end;
-                }
-            }
-
         }
 
         .box-2{

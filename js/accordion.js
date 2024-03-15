@@ -1,3 +1,5 @@
+// W3 Schools accordion
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 

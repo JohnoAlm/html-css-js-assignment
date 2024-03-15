@@ -5,3 +5,30 @@
     outline: none;
 
 }
+
+.input-error-handler{
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.input-error-handler.valid{    
+    color: $success;
+
+    &:before{              
+        font-family: "Font Awesome 5 Pro";
+        content: '\f00c';
+        margin-right: 10px;
+        justify-content: end;
+    }                 
+}
+
+.input-error-handler.invalid{    
+    color: $danger;
+
+    &:before{
+        font-family: "Font Awesome 5 Pro";
+        content: '\f06a';
+        margin-right: 10px;
+        justify-content: end;
+    }       
+}
